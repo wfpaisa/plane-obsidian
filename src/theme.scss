@@ -1,7 +1,28 @@
 /* @settings
+name: Plane base colors
+id: plane-style
+settings:
+	
+	-
+		id: interface
+		title: Interface colors
+		type: heading
+		level: 1
+		collapsed: true
+	-
+		id: base
+		title: Base color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#'
+        default-dark: '#'
+*/
 
-name: Adwaita
-id: com-github-birneee-obsidian-adwaita
+/* @settings
+
+name: Plane
+id: com-github-birneee-obsidian-plane
 settings:
     -
         title: Window Buttons
@@ -83,6 +104,7 @@ settings:
         type: heading
         level: 2
         collapsed: false
+
     -
         id: adwaita-colors
         title: Enable
@@ -195,11 +217,11 @@ body.adwaita-colors-linux-only.mod-linux {
         --tab-text-color: #929292;
         --tab-text-color-focused: #8a8a8a;
         --tab-text-color-focused-active-current: #8a8a8a;
-        --background-modifier-hover: #323232;
+        --background-modifier-hover: #0080FF69;
         &.is-focused {
             .workspace-tabs.mod-top .workspace-tab-header-container,
             .sidebar-toggle-button {
-                --background-modifier-hover: #464646;
+                --background-modifier-hover: #0080FF69;
             };
         }
     }
@@ -232,10 +254,10 @@ body.adwaita-mod-linux-only.mod-linux {
     --adwaita-mod-foreground-focus: var(--adwaita-headerbar-fg-color);
 
     &.theme-dark {
-        --adwaita-mod-background: #2e2e2e;
-        --adwaita-mod-background-focus: #444444;
-        --adwaita-mod-background-hover: #4f4f4f;
-        --adwaita-mod-background-active: #6e6e6e;
+        --adwaita-mod-background: transparent;
+        --adwaita-mod-background-focus: transparent;
+        --adwaita-mod-background-hover: #3b4055;
+        --adwaita-mod-background-active: #3b4055;
         --adwaita-mod-foreground: #929292;
     }
     
@@ -312,16 +334,19 @@ body.adwaita-mod-linux-only.mod-linux {
             &.mod-minimize::after {
                 -webkit-mask-image: var(--adwaita-icon-window-minimize-symbolic);
                 mask-image: var(--adwaita-icon-window-minimize-symbolic);
+                background-color: #ffbd00;
             }
     
             &.mod-maximize::after {
                 -webkit-mask-image: var(--adwaita-icon-window-maximize-symbolic);
                 mask-image: var(--adwaita-icon-window-maximize-symbolic);
+                background-color: #00f790;
             }
     
             &.mod-close::after {
                 -webkit-mask-image: var(--adwaita-icon-window-close-symbolic);
                 mask-image: var(--adwaita-icon-window-close-symbolic);
+                background-color: #ff267c;
             }
     
             &:hover {
@@ -555,4 +580,13 @@ body.adwaita-icons-linux-only.mod-linux {
     .workspace-tab-header[data-type="search"] .workspace-tab-header-inner-icon {
         @include replace-svg(var(--adwaita-icon-folder-saved-search-symbolic))
     }
+}
+
+input[type=checkbox]:checked,
+.checkbox-container.is-enabled{
+    background-color: #00df9c;
+}
+
+input[type=checkbox]:checked{
+    border-color: #00df9c;
 }

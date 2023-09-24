@@ -6,9 +6,9 @@ adw_icon_download_dir := "./build/adw-icons"
 
 adw-icons:
     mkdir -p {{adw_icon_download_dir}}
-    - wget -nc -P {{adw_icon_download_dir}} "{{adw_icon_theme_repo}}/ui/window-close-symbolic.svg"
-    - wget -nc -P {{adw_icon_download_dir}} "{{adw_icon_theme_repo}}/ui/window-maximize-symbolic.svg"
-    - wget -nc -P {{adw_icon_download_dir}} "{{adw_icon_theme_repo}}/ui/window-minimize-symbolic.svg"
+    # - wget -nc -P {{adw_icon_download_dir}} "{{adw_icon_theme_repo}}/ui/window-close-symbolic.svg"
+    # - wget -nc -P {{adw_icon_download_dir}} "{{adw_icon_theme_repo}}/ui/window-maximize-symbolic.svg"
+    # - wget -nc -P {{adw_icon_download_dir}} "{{adw_icon_theme_repo}}/ui/window-minimize-symbolic.svg"
     - wget -nc -P {{adw_icon_download_dir}} "{{adw_icon_theme_repo}}/actions/sidebar-show-symbolic.svg"
     - wget -nc -P {{adw_icon_download_dir}} "{{adw_icon_theme_repo}}/actions/sidebar-show-right-symbolic.svg"
     - wget -nc -P {{adw_icon_download_dir}} "{{adw_icon_theme_repo}}/actions/tab-new-symbolic.svg"
@@ -58,7 +58,7 @@ install:
     if ! [ -d "${OBSIDIAN_HOME}/.obsidian" ]; then
         echo "failed to install: \$OBSIDIAN_HOME/.obsidian does not exist"; exit 1
     fi
-    mkdir -p "${OBSIDIAN_HOME}/.obsidian/themes/Adwaita"
-    cp manifest.json "${OBSIDIAN_HOME}/.obsidian/themes/Adwaita/manifest.json"
-    cp theme.css "${OBSIDIAN_HOME}/.obsidian/themes/Adwaita/theme.css"
-    echo "installed at ${OBSIDIAN_HOME}/.obsidian/themes/Adwaita"
+    mkdir -p "${OBSIDIAN_HOME}/.obsidian/themes/Plane"
+    cp manifest.json "${OBSIDIAN_HOME}/.obsidian/themes/Plane/manifest.json"
+    cp theme.css "${OBSIDIAN_HOME}/.obsidian/themes/Plane/theme.css"
+    echo "installed at ${OBSIDIAN_HOME}/.obsidian/themes/Plane"

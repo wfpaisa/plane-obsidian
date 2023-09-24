@@ -1,8 +1,20 @@
 // source: https://gnome.pages.gitlab.gnome.org/libadwaita/doc/main/named-colors.html
 
 @mixin adwaita-colors-dark {
+
+    --base: #1E212F;
+    --background-primary: var(--base);
+    --background-secondary: var(--base);;
+    --background-modifier-border-focus: rgba(255,255,255,0.1);
+    --nav-item-background-active: rgba(255,255,255,0.1);
+    --code-background: rgba(0,0,0,0.2);
+    --color-base-30: #303548;
+    --color-base-25: #303548;
+    --color-base-35: #3b4055;
+    --color-base-40: #454957;
+
     --adwaita-accent-color: #78aeed;
-    --adwaita-accent-bg-color: #3584e4;
+    --adwaita-accent-bg-color: #007EFF;
     --adwaita-accent-fg-color: #ffffff;
 
     --adwaita-destructive-color: #ff7b63;
@@ -21,30 +33,41 @@
     --adwaita-error-bg-color: #c01c28;
     --adwaita-error-fg-color: #ffffff;
 
-    --adwaita-window-bg-color: #242424;
+    --adwaita-window-bg-color: var(--base);
     --adwaita-window-fg-color: #ffffff;
 
     --adwaita-view-bg-color: #1e1e1e;
     --adwaita-view-fg-color: #ffffff;
 
-    --adwaita-headerbar-bg-color: #303030;
+    --adwaita-headerbar-bg-color: var(--base);;
     --adwaita-headerbar-fg-color: #ffffff;
 
     --adwaita-headerbar-border-color: #ffffff;
-    --adwaita-headerbar-backdrop-color: #242424;
+    --adwaita-headerbar-backdrop-color: var(--base);;
     --adwaita-headerbar-shade-color: rgba(0, 0, 0, 0.36);
 
     --adwaita-card-bg-color: rgba(255, 255, 255, 0.08);
     --adwaita-card-fg-color: #ffffff;
     --adwaita-card-shade-color: rgba(0, 0, 0, 0.36);
 
-    --adwaita-dialog-bg-color: #383838;
+    --adwaita-dialog-bg-color: #262A3B;
     --adwaita-dialog-fg-color: #ffffff;
 
-    --adwaita-popover-bg-color: #383838;
+    --adwaita-popover-bg-color: #262A3B;
     --adwaita-popover-fg-color: #ffffff;
     --adwaita-popover-shader-color: rgba(0, 0, 0, 0.36);
 
     --adwaita-shade-color: rgba(0, 0, 0, 0.36);
     --adwaita-scrollbar-outline-color: rgba(0, 0, 0, 0.5);
+
+    --code-comment: #D8E4FC75;
+    --code-function: #36D4C7;
+    --code-important: #f091b1;
+    --code-keyword: #b486ff;
+    --code-operator: #F3A0BC;
+    --code-property: #8EDFFF;
+    --code-punctuation: #E6E8EF;
+    --code-string: #E6E8EF;
+    --code-tag: #b486ff;
+    --code-value: #b486ff;
 }
