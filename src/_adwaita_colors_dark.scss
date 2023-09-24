@@ -70,4 +70,8 @@
     --code-string: #E6E8EF;
     --code-tag: #b486ff;
     --code-value: #b486ff;
+
+    --link-color: #b486ff;
+    --link-external-color: var(--link-color);
+    --link-external-color-hover: var(--link-color);
 }

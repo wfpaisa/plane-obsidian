@@ -286,7 +286,10 @@ body {
     --code-punctuation: #E6E8EF;
     --code-string: #E6E8EF;
     --code-tag: #b486ff;
-    --code-value: #b486ff; }
+    --code-value: #b486ff;
+    --link-color: #b486ff;
+    --link-external-color: var(--link-color);
+    --link-external-color-hover: var(--link-color); }
   body.theme-light {
     --adwaita-accent-color: #1c71d8;
     --adwaita-accent-bg-color: #3584e4;
@@ -793,8 +796,10 @@ body.adwaita-icons-linux-only.mod-linux {
     margin: auto; }
 
 input[type=checkbox]:checked,
+input[type=checkbox]:checked:hover,
 .checkbox-container.is-enabled {
   background-color: #00df9c; }
 
-input[type=checkbox]:checked {
+input[type=checkbox]:checked,
+input[type=checkbox]:checked:hover {
   border-color: #00df9c; }
